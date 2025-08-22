@@ -58,7 +58,7 @@ default-denied-message: "&c您没有权限使用此命令！"
 插件会自动监视配置文件的变化并在修改时自动重载配置，无需手动执行 reload 命令。
 
 ## 开发者信息
-作者：YourName
+作者：54895
 版本：1.0
 描述：A plugin to manage command permissions and custom messages
 
