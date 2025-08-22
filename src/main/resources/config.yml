@@ -1,0 +1,31 @@
+# CommandManager 配置文件
+# 配置指令权限和自定义消息
+
+# 默认消息配置
+default-messages:
+  denied: '&c你没有权限执行此命令!'
+  no-permission: '&c你缺少权限: {permission}'
+
+# 指令配置
+# 格式: '命令名称:'
+#   permission: 所需权限节点
+#   denied-message: 被拒绝时的消息 (可选，未设置则使用默认)
+#   no-permission-message: 缺少权限时的消息 (可选，未设置则使用默认)
+commands:
+  gamemode:
+    permission: 'minecraft.command.gamemode'
+    denied-message: '&c你不能使用游戏模式指令!'
+  tp:
+    permission: 'minecraft.command.teleport'
+    no-permission-message: '&c你需要 {permission} 权限才能使用传送指令'
+  give:
+    permission: 'minecraft.command.give'
+    denied-message: '&4管理员已禁止你使用物品给予指令'
+  op:
+    permission: 'minecraft.command.op'
+  deop:
+    permission: 'minecraft.command.deop'
+  ban:
+    permission: 'minecraft.command.ban.player'
+  kick:
+    permission: 'minecraft.command.kick.player'
